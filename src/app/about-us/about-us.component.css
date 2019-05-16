@@ -1,5 +1,39 @@
 #about {
     padding: 60px 0 40px 0;
     position: relative;
+    background: url("../../assets/images/mzl-bg1.jpg") center top no-repeat fixed;
+    background-size: cover;
 }
 
+#about::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.92);
+    z-index: 9;
+}
+#about .container {
+    position: relative;
+    z-index: 10;
+  }
+.col-md-6{
+    padding: 20px 60px;
+}
+
+#about h3{
+    text-align: center;
+}
+
+.card h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.card{
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+}
