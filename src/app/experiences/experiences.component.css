@@ -1,0 +1,56 @@
+#experiences {
+    padding: 60px 0 40px 0;
+    position: relative;
+    background: url("../../assets/images/mzl-bg1.jpg") center top no-repeat fixed;
+    background-size: cover;
+}
+
+#experiences::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.92);
+    z-index: 9;
+}
+
+#experiences .container {
+    position: relative;
+    z-index: 10;
+  }
+
+.categories{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn{
+    margin: 10px;
+}
+
+.card h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.card{
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.col-md-6{
+    padding: 20px 60px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #DEDD00;
+    border-color: white;
+}

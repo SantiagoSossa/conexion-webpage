@@ -1,3 +1,63 @@
-<p>
-  experiences works!
-</p>
+<section id="experiences">
+  <div class="container">
+    <header class="main-title">
+      <h3>Experiencias</h3>
+    </header>
+    <div class="categories">
+      <button class="btn btn-primary" (click)="filterBy('all')">ALL</button>
+      <button class="btn btn-primary" (click)="filterBy('1')">CAT 1</button>
+      <button class="btn btn-primary" (click)="filterBy('2')">CAT 2</button>
+      <button class="btn btn-primary" (click)="filterBy('3')">CAT 3</button>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6" *ngIf="showAll show1">
+          <div class="card mr-3" [@bounce]="bounce">
+            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3>TEXTO 1 </h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" *ngIf="showAll || show1 || show2">
+          <div class="card mr-3" [@bounce]="bounce">
+            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3>TEXTO 1 Y 2</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" *ngIf="showAll || show2 || show3">
+          <div class="card mr-3" [@bounce]="bounce">
+            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3>TEXTO 2 Y 3</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" *ngIf="showAll || show1 || show3">
+          <div class="card mr-3" [@bounce]="bounce">
+            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3>TEXTO 1 Y 3</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" *ngIf="showAll || show1">
+          <div class="card mr-3" [@bounce]="bounce">
+            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3>TEXTO 1</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" *ngIf="showAll || show2">
+          <div class="card mr-3" [@bounce]="bounce">
+            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3>TEXTO 2</h3> 
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
