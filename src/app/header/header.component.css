@@ -1,0 +1,72 @@
+  #header{
+    position:fixed;
+    height: 70px;
+    padding: 0 20px;
+    transition: all 0.5s;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    width: 100%;
+  }
+  
+  .scrolled{
+    padding: 10px 20px;
+    height: 60;
+    background: rgba(8, 53, 93, 0.9);
+    transition: all 0.5s;
+  }
+
+  .navbar-brand{
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navbar-icon{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn{
+    margin-left: 15px
+  }
+
+  ul {
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+  }
+
+  .navbar-collapse{
+      position: relative;
+      width: 100px;
+    background-color:  rgba(8, 53, 93, 0.95);
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    ul {
+        position: static;
+        color: white;
+        right: 10px;
+        z-index: 99;
+      }
+
+    #header{
+        padding: 0;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar-toggler{
+        margin: 0.5rem 1rem;
+    }
+    .navbar-brand{
+        margin: 0.5rem 1rem;
+    }
+    .navbar-nav{
+        margin: 0.5rem 1rem;
+    }
+
+  }
