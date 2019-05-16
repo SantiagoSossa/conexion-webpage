@@ -1,0 +1,32 @@
+#services {
+    background: #fff;
+    background-size: cover;
+    padding: 60px 0 40px 0;
+  }
+
+header p{
+    margin-bottom: 30px;
+}
+
+#services h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+#services .row p{
+    color: rgb(29, 29, 29);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: justify;
+    margin: 15px 0 30px;
+}
+
+#services .service-icon{
+    margin: 20px;
+    color: #DEDD00;
+    text-align: center;
+    font-size: 36px;
+}
