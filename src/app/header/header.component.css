@@ -1,6 +1,6 @@
   #header{
     position:fixed;
-    height: 70px;
+    height: 80px;
     padding: 0 20px;
     transition: all 0.5s;
     left: 0;
@@ -11,11 +11,23 @@
     width: 100%;
   }
   
+  .nv-color{
+    padding: 0;
+  }
+
+  #header li a{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    font-size: 16px;
+  }
+
   .scrolled{
     padding: 40px 20px;
     height: 60;
     background: rgba(8, 53, 93, 0.9);
     transition: all 0.5s;
+    padding-bottom: 30px;
   }
 
   .navbar-brand{
@@ -44,6 +56,11 @@
     background-color:  rgba(8, 53, 93, 0.95);
   }
 
+  .img-logo{
+    width:170px;
+    height:70px;
+    transition: all 0.5s;
+  }
 
   @media only screen and (max-width: 600px) {
     ul {
@@ -68,5 +85,5 @@
     .navbar-nav{
         margin: 0.5rem 1rem;
     }
-
+    
   }
