@@ -3,7 +3,7 @@ import { Inject} from "@angular/core";
 import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
-  selector: 'header',
+  selector: 'nav-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
@@ -26,10 +26,7 @@ export class HeaderComponent implements OnInit {
         this.windowScrolled = false;
         }
     }
-  @HostListener('scroll', ['$event']) 
-    scrollHandler(event) {
-      console.debug("Scroll Event");
-    }
+  
   ngOnInit() {
   }
 

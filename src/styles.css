@@ -3,3 +3,18 @@
 
 /* azul #08355D
 verde #DEDD00 */
+.main-title h3{
+    font-size: 34px;
+    font-weight: 650;
+    position: relative;
+    padding-bottom: 20px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-title p {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #333;
+}

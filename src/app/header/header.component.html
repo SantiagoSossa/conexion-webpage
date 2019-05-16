@@ -1,4 +1,4 @@
-<div id="header" [ngClass]="{'scrolled' : innerWidth>100 || !isCollapsed}">
+<section id="header" [ngClass]="{'scrolled' : innerWidth>100 || !isCollapsed}">
   <nav class="navbar navbar-light navbar-expand-sm nv-color justify-content-between">
     <a class="navbar-brand" href="#">Conexion</a>
     <button class="navbar-toggler navbar-toggler-right burger-show" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
@@ -22,4 +22,4 @@
       </ul>
     </div>
   </nav>
-</div>
+</section>
