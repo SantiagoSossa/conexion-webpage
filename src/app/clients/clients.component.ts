@@ -14,6 +14,8 @@ export class ClientsComponent implements OnInit {
     touchDrag: false,
     pullDrag: false,
     autoplay: true,
+    margin: 10,
+    autoWidth: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
@@ -29,8 +31,7 @@ export class ClientsComponent implements OnInit {
       940: {
         items: 4
       }
-    },
-    nav: true
+    }
   }
 
   constructor() { }
