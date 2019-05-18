@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { bypassSanitizationTrustResourceUrl } from '@angular/core/src/sanitization/bypass';
 
 @Component({
   selector: 'clients',
@@ -10,12 +9,14 @@ export class ClientsComponent implements OnInit {
 
   customOptions: any = {
     loop: true,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
     autoplay: true,
     margin: 10,
     autoWidth: true,
+    dots: false,
+    nav: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
@@ -26,10 +27,10 @@ export class ClientsComponent implements OnInit {
         items: 2
       },
       740: {
-        items: 3
+        items: 4
       },
       940: {
-        items: 4
+        items: 6
       }
     }
   }
