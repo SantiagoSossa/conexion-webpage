@@ -21,18 +21,31 @@
       </div>
     </div>
     <div class="contact-us-form form-group">
-      <form>
+      <form #f="ngForm" (ngSubmit)="sendEmail(f)">
         <div class="row">
           <div class="col-md-6">
-            <input class="form-control" type="text" ngModel name="name" placeholder="Nombre y Apellidos">
+            <input id="name" required class="form-control" type="text" ngModel name="name" #name="ngModel" placeholder="Nombre y Apellidos">
+            <div *ngIf="name.touched && name.invalid">
+              <div class="alert alert-danger">Ingrese su nombre</div>
+            </div>
           </div>
           <div class="col-md-6">
-            <input class="form-control" type="text" ngModel name="emal" placeholder="Emial">
+            <input id="email" required class="form-control" type="email" ngModel name="email"  #email="ngModel" placeholder="Email">
+            <div *ngIf="email.touched && email.invalid">
+              <div class="alert alert-danger">
+                <div *ngIf="email.errors.email">Ingrese un email válido</div>
+                <div *ngIf="email.errors.required">Ingrese su email</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="message-area">
-          <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+          <textarea id="message" required class="form-control" cols="30" rows="5" ngModel name="message" #message="ngModel" placeholder="Mensaje"></textarea>
+          <div *ngIf="message.touched && message.invalid">
+            <div class="alert alert-danger">Ingrese un mensaje</div>
+          </div>
         </div>
+        <button class="btn btn-primary" type="submit" [disabled]="f.invalid">Enviar</button>
       </form>
     </div>
   </div>
