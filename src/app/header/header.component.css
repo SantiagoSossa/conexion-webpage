@@ -6,7 +6,6 @@
     left: 0;
     top: 0;
     right: 0;
-    transition: all 0.5s;
     z-index: 997;
     width: 100%;
   }
@@ -53,7 +52,8 @@
   .navbar-collapse{
       position: relative;
       width: 100px;
-    background-color:  rgba(8, 53, 93, 0.95);
+      background-color:  rgba(8, 53, 93, 0.95);
+      transition: all 0.5s;
   }
 
   .img-logo{
@@ -62,7 +62,9 @@
     transition: all 0.5s;
   }
 
-  @media only screen and (max-width: 600px) {
+  
+
+  @media only screen and (max-width: 768px) {
     ul {
         position: static;
         color: white;
@@ -80,10 +82,34 @@
         margin: 0.5rem 1rem;
     }
     .navbar-brand{
-        margin: 0.5rem 1rem;
+        margin: 0 1rem;
+        padding: 0;
     }
     .navbar-nav{
         margin: 0.5rem 1rem;
     }
-    
+    .navbar-brand img{
+      padding: 0.25rem 0 0 0;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    #header li a{
+      font-weight: 650;
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #header li a{
+      font-weight: 650;
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 470px) {
+    .navbar-brand img{
+      height: 72px;
+      width: 180px;
+    }
   }
