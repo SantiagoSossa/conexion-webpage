@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/animate.css/animate.min.css";
 
 /* azul #08355D
 verde #DEDD00 */
@@ -17,4 +18,11 @@ verde #DEDD00 */
     text-align: center;
     padding-bottom: 30px;
     color: #333;
+}
+
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
 }

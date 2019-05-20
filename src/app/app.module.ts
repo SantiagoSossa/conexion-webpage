@@ -16,7 +16,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
-import { TestComponent } from './test/test.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -28,8 +28,7 @@ import { TestComponent } from './test/test.component';
     ExperiencesComponent,
     ClientsComponent,
     ContactUsComponent,
-    FooterComponent,
-    TestComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,8 @@ import { TestComponent } from './test/test.component';
     BrowserAnimationsModule,
     RouterModule.forRoot([]),
     CarouselModule,
-    FormsModule
+    FormsModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
