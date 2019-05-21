@@ -23,3 +23,25 @@
 .message-area{
     padding: 20px 0;
 }
+
+.button-send{
+    cursor: pointer;
+    background-color:#08355D;
+    color: #DEDD00;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 3px;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-send:hover{
+    background-color:rgb(3, 30, 54);
+    color: rgb(201, 201, 0);
+    transition: 0.5s;
+}

@@ -1,13 +1,13 @@
 <section id="experiences">
   <div class="container">
-    <header class="main-title" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">
+    <header class="main-title" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
       <h3>Experiencias</h3>
     </header>
-    <div class="categories" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-      <button class="btn btn-primary" (click)="filterBy('all')">ALL</button>
-      <button class="btn btn-primary" (click)="filterBy('1')">CAT 1</button>
-      <button class="btn btn-primary" (click)="filterBy('2')">CAT 2</button>
-      <button class="btn btn-primary" (click)="filterBy('3')">CAT 3</button>
+    <div class="categories" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+      <button class="button-filter" [ngClass]="{'button-active':showAll}" (click)="filterBy('all')">ALL</button>
+      <button class="button-filter" [ngClass]="{'button-active':show1}" (click)="filterBy('1')">CAT 1</button>
+      <button class="button-filter" [ngClass]="{'button-active':show2}" (click)="filterBy('2')">CAT 2</button>
+      <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">CAT 3</button>
     </div>
     <div class="row">
         <div class="col-lg-4 col-md-6" *ngIf="showAll show1">

@@ -23,6 +23,7 @@
 
 .categories{
     text-align: center;
+    padding-top: 30px;
     margin-bottom: 40px;
 }
 
@@ -68,11 +69,21 @@
     transition: 0.4s;
 }
 
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-    background-color: #DEDD00;
-    border-color: white;
+.button-filter{
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 3px;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button-filter:hover,
+.button-active{
+    background-color:#08355D;
+    color: #DEDD00;
+    transition: 0.5s;
 }
