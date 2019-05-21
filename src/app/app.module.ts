@@ -4,6 +4,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FormsModule }   from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,6 +39,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     RouterModule.forRoot([]),
     CarouselModule,
     FormsModule,
+    HttpClientModule,
     AnimateOnScrollModule.forRoot()
   ],
   providers: [],
