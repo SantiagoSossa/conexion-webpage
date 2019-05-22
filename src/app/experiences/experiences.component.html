@@ -8,76 +8,274 @@
       <button class="button-filter" [ngClass]="{'button-active':show1}" (click)="filterBy('1')">ACTIVACIÓN BTL ATL</button>
       <button class="button-filter" [ngClass]="{'button-active':show2}" (click)="filterBy('2')">OPERACIÓN LOGÍSTICA</button>
       <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">ALQUILER EQUIPOS</button>
-      <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">ORGANIZACIÓN FIESTAS</button>
-      <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">CATERING</button>
-      <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">ESTRATEGIAS MARKETING</button>
-      <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">COMUNICACIÓN DIGITAL</button>
-      <button class="button-filter" [ngClass]="{'button-active':show3}" (click)="filterBy('3')">PRODUCCIÓN AUDIOVISUAL</button>
+      <button class="button-filter" [ngClass]="{'button-active':show4}" (click)="filterBy('4')">ORGANIZACIÓN FIESTAS</button>
+      <button class="button-filter" [ngClass]="{'button-active':show5}" (click)="filterBy('5')">CATERING</button>
+      <button class="button-filter" [ngClass]="{'button-active':show6}" (click)="filterBy('6')">ESTRATEGIAS MARKETING</button>
+      <button class="button-filter" [ngClass]="{'button-active':show7}" (click)="filterBy('7')">COMUNICACIÓN DIGITAL</button>
+      <button class="button-filter" [ngClass]="{'button-active':show8}" (click)="filterBy('8')">PRODUCCIÓN AUDIOVISUAL</button>
     </div>
     <div class="row">
-        <div class="col-lg-4 col-md-6" *ngIf="showAll show1">
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
           <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <img class="card-img-top" src="assets/images/experiences/1rafresco.jpg" alt="Card image cap">
             <div class="exp-info">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
             </div>
             <div class="card-body">
-              <h3>TEXTO 1 </h3> 
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1 || show2">
-          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
-            <div class="exp-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
-            </div>
-            <div class="card-body">
-              <h3>TEXTO 1 Y 2</h3> 
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2 || show3">
-          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
-            <div class="exp-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
-            </div>
-            <div class="card-body">
-              <h3>TEXTO 2 Y 3</h3> 
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1 || show3">
-          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
-            <div class="exp-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
-            </div>
-            <div class="card-body">
-              <h3>TEXTO 1 Y 3</h3> 
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
-          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
-            <div class="exp-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
-            </div>
-            <div class="card-body">
-              <h3>TEXTO 1</h3> 
+              <h3>1ra Copa Frescolanta </h3> 
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
           <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <img class="card-img-top" src="assets/images/mzl-bg1.jpg" alt="Card image cap">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/2dafresco-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/2dafresco-2.jpg"></ng-template>
+              <ng-template carouselSlide><img src="assets/images/experiences/2dafresco-3.jpg"></ng-template>
+            </owl-carousel-o>
             <div class="exp-info">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
             </div>
             <div class="card-body">
-              <h3>TEXTO 2</h3> 
+              <h3>2da Copa Frescolanta</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/baloncesto-1.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Liga Profesional Baloncesto</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/boulevarron-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/boulevarron-2.jpg"></ng-template>
+            </owl-carousel-o>
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Bulevar Ron Viejo De Caldas</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/cabalgata-1.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Cabalgata Feria De Manizales</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/chec.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Chec</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show3">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/consoladj.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Consola DJ</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/copaslight.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Copa SLIGHT</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/cristal-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/cristal-2.jpg"></ng-template>
+            </owl-carousel-o>
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Aguardiente Cristal</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1 || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/emas.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Emas</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/equinas-1.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+            <h3>Exposición Equina</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/estadio-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/estadio-2.jpg"></ng-template>
+            </owl-carousel-o>
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Estadio Palogrande</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show4">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/fiestafdaempocaldas.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Fiesta Empocaldas</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/feriaequinanovatos.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Festival Equino Grado B</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/ifood.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>ifood</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1 || show3">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/oncecaldas-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/oncecaldas-2.jpg"></ng-template>
+            </owl-carousel-o>
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Once Caldas</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show4 || show5">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/penon-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/penon-2.jpg"></ng-template>
+            </owl-carousel-o>
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Peñon</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1 || show4 || show6">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <owl-carousel-o [options]="customOptions">
+              <ng-template carouselSlide><img src="assets/images/experiences/ron-1.jpg"></ng-template>  
+              <ng-template carouselSlide><img src="assets/images/experiences/ron-2.jpg"></ng-template>
+            </owl-carousel-o>
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Ron Viejo De Caldas</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show3">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/sanluis.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>San Luis</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/susuerte.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Susuerte</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show1">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/ubereats.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Uber Eats</h3> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" *ngIf="showAll || show2">
+          <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <img class="card-img-top" src="assets/images/experiences/zigzag.jpg" alt="Card image cap">
+            <div class="exp-info">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam totam quae rerum explicabo, dolor ex aspernatur qui reprehenderit culpa earum iusto ipsa debitis blanditiis expedita, cumque numquam! Quae, autem?</p>
+            </div>
+            <div class="card-body">
+              <h3>Zig Zag Market</h3> 
             </div>
           </div>
         </div>

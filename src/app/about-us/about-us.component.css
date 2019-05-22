@@ -1,7 +1,7 @@
 #about {
     padding: 60px 0 40px 0;
     position: relative;
-    background: url("../../assets/images/mzl-bg1.jpg") center top no-repeat fixed;
+    background: url("../../assets/images/backgrounds/bg-2.jpg") center top no-repeat fixed;
     background-size: cover;
 }
 
@@ -25,6 +25,10 @@
 
 #about h3{
     text-align: center;
+}
+
+img{
+    filter: brightness(85%);
 }
 
 .card h3{
