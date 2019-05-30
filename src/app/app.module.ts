@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -29,16 +30,18 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     ExperiencesComponent,
     ClientsComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    NgbModule.forRoot(),
     BrowserAnimationsModule,
     RouterModule.forRoot([]),
     CarouselModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AnimateOnScrollModule.forRoot()
   ],
