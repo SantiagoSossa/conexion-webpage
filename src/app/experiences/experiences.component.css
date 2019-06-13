@@ -68,7 +68,7 @@
 }
 
 .exp-info:hover{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     opacity: 1;
     transition: 0.4s;
     z-index: 99;
@@ -95,4 +95,8 @@ owl-carousel-o{
     background-color:#08355D;
     color: #DEDD00;
     transition: 0.5s;
+}
+
+p{
+    font-size: 18px;
 }

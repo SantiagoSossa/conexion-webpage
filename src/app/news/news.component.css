@@ -97,3 +97,59 @@
 .modal-body{
     text-align: center;
 }
+
+.city-info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    color: rgb(201, 197, 191);
+    opacity: 0;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.city-info:hover{
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+
+.card-head{
+    position: relative;
+}
+
+h1{
+    position: relative;
+    top: 45%;
+}
+
+header{
+    text-align: center;
+}
+
+.head-img{
+    size: 100%;
+    width: 30%;
+    height: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+    .head-img{
+        size: 100%;
+        width: 40%;
+        height: 25%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .head-img{
+        size: 100%;
+        width: 60%;
+        height: 35%;
+    }
+}

@@ -2,11 +2,17 @@
   <div class="container">
     <header class="main-title" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
       <h3>Actualidad</h3>
+      <img class="head-img" src="assets/images/news/frescolanta2.png" alt="">
     </header>
     <div class="row">
       <div class="col-lg-4 col-md-6">
         <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <img class="card-img-top" src="assets/images/experiences/zigzag.jpg" alt="Card image cap">
+            <div class="card-head">
+              <img class="card-img-top" src="assets/images/news/armenia.png" alt="Card image cap">
+              <div class="city-info">
+                <h1>Armenia</h1>
+              </div>
+            </div>
           <div class="card-body">
             <h3>
               Resultados
@@ -41,6 +47,33 @@
                       <img src="assets/images/news/fecha2_armenia.png" alt="Card image cap">
                     </div>
                   </ng-template>
+                  <button class="button-filter" (click)="enviar(f3a)">Fecha 3</button>
+                  <ng-template #f3a let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 3 Armenia
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha3_armenia.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f4a)">Fecha 4</button>
+                  <ng-template #f4a let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 4 Armenia
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha4_armenia.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f5a)">Fecha 5</button>
+                  <ng-template #f5a let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 5 Armenia
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha5_armenia.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
                   <button class="button-filter">Goleadores</button>
                   <div class="service-icon">
                     <i (click)="resultsArmenia=!resultsArmenia" class="icon ion-md-arrow-dropup-circle"></i>
@@ -52,7 +85,12 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <img class="card-img-top" src="assets/images/experiences/zigzag.jpg" alt="Card image cap">
+          <div class="card-head">
+            <img class="card-img-top" src="assets/images/news/manizales.png" alt="Card image cap">
+            <div class="city-info">
+              <h1>Manizales</h1>
+            </div>
+          </div>
           <div class="card-body">
             <h3>
               Resultados
@@ -87,6 +125,33 @@
                       <img src="assets/images/news/fecha2_manizales.png" alt="Card image cap">
                     </div>
                   </ng-template>
+                  <button class="button-filter" (click)="enviar(f3m)">Fecha 3</button>
+                  <ng-template #f3m let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 3 Manizales
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha3_manizales.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f4m)">Fecha 4</button>
+                  <ng-template #f4m let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 4 Manizales
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha4_manizales.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f5m)">Fecha 5</button>
+                  <ng-template #f5m let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 5 Manizales
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha5_manizales.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
                   <button class="button-filter">Goleadores</button>
                   <div class="service-icon">
                     <i (click)="resultsManizales=!resultsManizales" class="icon ion-md-arrow-dropup-circle"></i>
@@ -98,7 +163,12 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <img class="card-img-top" src="assets/images/experiences/zigzag.jpg" alt="Card image cap">
+            <div class="card-head">
+              <img class="card-img-top" src="assets/images/news/pereira.png" alt="Card image cap">
+              <div class="city-info">
+                <h1>Pereira</h1>
+              </div>
+            </div>
           <div class="card-body">
             <h3>
               Resultados
@@ -131,6 +201,33 @@
                     </div>
                     <div class="modal-body">
                       <img src="assets/images/news/fecha2_pereira.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f3p)">Fecha 3</button>
+                  <ng-template #f3p let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 3 Pereira
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha3_pereira.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f4p)">Fecha 4</button>
+                  <ng-template #f4p let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 4 Pereira
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha4_pereira.png" alt="Card image cap">
+                    </div>
+                  </ng-template>
+                  <button class="button-filter" (click)="enviar(f5p)">Fecha 5</button>
+                  <ng-template #f5p let-c="close" let-d="dismiss">
+                    <div class="modal-header">Fecha 5 Pereira
+                      <button type="button" class="close" (click)="c('')">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="assets/images/news/fecha5_pereira.png" alt="Card image cap">
                     </div>
                   </ng-template>
                   <button class="button-filter">Goleadores</button>
