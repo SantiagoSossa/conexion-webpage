@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="contact-us-form form-group">
-      <form #f="ngForm" (ngSubmit)="register(f)">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f); f.reset()">
         <div class="row">
           <div class="col-md-6">
             <input id="name" required class="form-control" type="text" ngModel name="name" #name="ngModel" placeholder="Nombre y Apellidos">

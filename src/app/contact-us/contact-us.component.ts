@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { HttpService } from './../http.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,7 +12,7 @@ export class ContactUsComponent implements OnInit {
   loading = false;
   buttionText = "Submit";
 
-  constructor(private http: HttpService) { }
+  constructor(private http: HttpService, private httpNew: HttpClient) { }
 
   ngOnInit() {
   }
@@ -40,6 +41,16 @@ export class ContactUsComponent implements OnInit {
         this.buttionText = "Submit";
       }
     );
+  }
+
+  onSubmit(form){
+    console.log("in",form);
+    this.httpNew.post('https://cors-anywhere.herokuapp.com/https://formcarry.com/s/E5m1S33CTvT', {
+          name: form.value.name,
+          email: form.value.email,
+          message: form.value.message
+        },{responseType: 'text'})
+        .subscribe(x => console.log('vea ',x));
   }
 
 }
