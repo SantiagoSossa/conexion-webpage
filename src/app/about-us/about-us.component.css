@@ -45,3 +45,7 @@ img{
 .card-body p{
     text-align: justify;
 }
+
+.card-body{
+    height: 300px;
+}
