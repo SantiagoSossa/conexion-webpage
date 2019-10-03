@@ -44,8 +44,15 @@ img{
 
 .card-body p{
     text-align: justify;
+    font-size: 16px;
 }
 
 .card-body{
     height: 300px;
+}
+
+@media(max-width: 500px){
+    .card-body p{
+        font-size: 14px;
+    }
 }
