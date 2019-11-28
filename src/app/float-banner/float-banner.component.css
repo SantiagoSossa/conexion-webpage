@@ -1,0 +1,23 @@
+.img-banner{
+}
+
+img{
+    position: fixed;
+    bottom: 0;
+    z-index: 100000;
+    width: 100vw;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 900px) {
+    img{
+        height: 15vh;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    img{
+        height: 10vh;
+    }
+   
+}
