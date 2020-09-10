@@ -1,341 +1,300 @@
 <section id="news">
-  <div class="container">
-    <header class="main-title" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-      <h3>Actualidad</h3>
-    </header>
-    <div class="news-box">
-        <img class="head-img" src="assets/images/news/frescolanta2.png" alt="">
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <div class="card-head">
-              <img class="card-img-top" src="assets/images/news/armenia.png" alt="Card image cap">
-              <div class="city-info">
-                <h1>Armenia</h1>
-              </div>
+    <div class="container">
+        <header class="main-title" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <h3>Actualidad</h3>
+        </header>
+        <div class="news-box">
+            <img class="head-img" src="assets/images/news/frescolanta2.png" alt="">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                        <div class="card-head">
+                            <img class="card-img-top" src="assets/images/news/armenia.png" alt="Card image cap">
+                            <div class="city-info">
+                                <h1>Armenia</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Resultados
+                                <div class="service-icon">
+                                    <i *ngIf="!resultsArmenia" (click)="resultsArmenia=!resultsArmenia" class="icon ion-md-arrow-dropdown-circle"></i>
+                                </div>
+                                <div *ngIf="resultsArmenia">
+                                    <button class="button-filter" (click)="enviar(ea)">Eliminatorias</button>
+                                    <ng-template #ea let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Eliminatorias Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body elimination">
+                                            <img src="assets/images/news/eliminacion_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f1a)">Fecha 1</button>
+                                    <ng-template #f1a let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 1 Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha1_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f2a)">Fecha 2</button>
+                                    <ng-template #f2a let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 2 Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha2_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f3a)">Fecha 3</button>
+                                    <ng-template #f3a let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 3 Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha3_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f4a)">Fecha 4</button>
+                                    <ng-template #f4a let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 4 Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha4_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f5a)">Fecha 5</button>
+                                    <ng-template #f5a let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 5 Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha5_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f6a)">Fecha 6</button>
+                                    <ng-template #f6a let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 6 Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha6_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(fea)">Fase Eliminatoria</button>
+                                    <ng-template #fea let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fase Eliminatoria Armenia
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fixture_armenia.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter">Goleadores</button>
+                                    <div class="service-icon">
+                                        <i (click)="resultsArmenia=!resultsArmenia" class="icon ion-md-arrow-dropup-circle"></i>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                        <div class="card-head">
+                            <img class="card-img-top" src="assets/images/news/manizales.png" alt="Card image cap">
+                            <div class="city-info">
+                                <h1>Manizales</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Resultados
+                                <div class="service-icon">
+                                    <i *ngIf="!resultsManizales" (click)="resultsManizales=!resultsManizales" class="icon ion-md-arrow-dropdown-circle"></i>
+                                </div>
+                                <div *ngIf="resultsManizales">
+                                    <button class="button-filter" (click)="enviar(em)">Eliminatorias</button>
+                                    <ng-template #em let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Eliminatorias Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body elimination">
+                                            <img src="assets/images/news/eliminacion_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f1m)">Fecha 1</button>
+                                    <ng-template #f1m let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 1 Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha1_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f2m)">Fecha 2</button>
+                                    <ng-template #f2m let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 2 Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha2_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f3m)">Fecha 3</button>
+                                    <ng-template #f3m let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 3 Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha3_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f4m)">Fecha 4</button>
+                                    <ng-template #f4m let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 4 Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha4_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f5m)">Fecha 5</button>
+                                    <ng-template #f5m let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 5 Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha5_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f6m)">Fecha 6</button>
+                                    <ng-template #f6m let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 6 Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha6_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(fem)">Fase Eliminatoria</button>
+                                    <ng-template #fem let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fase Eliminatoria Manizales
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fixture_manizales.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter">Goleadores</button>
+                                    <div class="service-icon">
+                                        <i (click)="resultsManizales=!resultsManizales" class="icon ion-md-arrow-dropup-circle"></i>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                        <div class="card-head">
+                            <img class="card-img-top" src="assets/images/news/pereira.png" alt="Card image cap">
+                            <div class="city-info">
+                                <h1>Pereira</h1>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3>
+                                Resultados
+                                <div class="service-icon">
+                                    <i *ngIf="!resultsPereira" (click)="resultsPereira=!resultsPereira" class="icon ion-md-arrow-dropdown-circle"></i>
+                                </div>
+                                <div *ngIf="resultsPereira">
+                                    <button class="button-filter" (click)="enviar(ep)">Eliminatorias</button>
+                                    <ng-template #ep let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Eliminatorias Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body elimination">
+                                            <img src="assets/images/news/eliminacion_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f1p)">Fecha 1</button>
+                                    <ng-template #f1p let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 1 Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha1_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f2p)">Fecha 2</button>
+                                    <ng-template #f2p let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 2 Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha2_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f3p)">Fecha 3</button>
+                                    <ng-template #f3p let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 3 Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha3_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f4p)">Fecha 4</button>
+                                    <ng-template #f4p let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 4 Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha4_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f5p)">Fecha 5</button>
+                                    <ng-template #f5p let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 5 Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha5_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(f6p)">Fecha 6</button>
+                                    <ng-template #f6p let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fecha 6 Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fecha6_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter" (click)="enviar(fep)">Fase Eliminatoria</button>
+                                    <ng-template #fep let-c="close" let-d="dismiss">
+                                        <div class="modal-header">Fase Eliminatoria Pereira
+                                            <button type="button" class="close" (click)="c('')">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="assets/images/news/fixture_pereira.png" alt="Card image cap">
+                                        </div>
+                                    </ng-template>
+                                    <button class="button-filter">Goleadores</button>
+                                    <div class="service-icon">
+                                        <i (click)="resultsPereira=!resultsPereira" class="icon ion-md-arrow-dropup-circle"></i>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-          <div class="card-body">
-            <h3>
-              Resultados
-              <div class="service-icon">
-                <i *ngIf="!resultsArmenia" (click)="resultsArmenia=!resultsArmenia" class="icon ion-md-arrow-dropdown-circle"></i>
-              </div>
-              <div *ngIf="resultsArmenia">
-                  <button class="button-filter" (click)="enviar(ea)">Eliminatorias</button>
-                  <ng-template #ea let-c="close" let-d="dismiss">
-                    <div class="modal-header">Eliminatorias Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body elimination">
-                      <img src="assets/images/news/eliminacion_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f1a)">Fecha 1</button>
-                  <ng-template #f1a let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 1 Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha1_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f2a)">Fecha 2</button>
-                  <ng-template #f2a let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 2 Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha2_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f3a)">Fecha 3</button>
-                  <ng-template #f3a let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 3 Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha3_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f4a)">Fecha 4</button>
-                  <ng-template #f4a let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 4 Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha4_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f5a)">Fecha 5</button>
-                  <ng-template #f5a let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 5 Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha5_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f6a)">Fecha 6</button>
-                  <ng-template #f6a let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 6 Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha6_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(fea)">Fase Eliminatoria</button>
-                  <ng-template #fea let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fase Eliminatoria Armenia
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fixture_armenia.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter">Goleadores</button>
-                  <div class="service-icon">
-                    <i (click)="resultsArmenia=!resultsArmenia" class="icon ion-md-arrow-dropup-circle"></i>
-                  </div>
-              </div>
-            </h3> 
-          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-          <div class="card-head">
-            <img class="card-img-top" src="assets/images/news/manizales.png" alt="Card image cap">
-            <div class="city-info">
-              <h1>Manizales</h1>
-            </div>
-          </div>
-          <div class="card-body">
-            <h3>
-              Resultados
-              <div class="service-icon">
-                <i *ngIf="!resultsManizales" (click)="resultsManizales=!resultsManizales" class="icon ion-md-arrow-dropdown-circle"></i>
-              </div>
-              <div *ngIf="resultsManizales">
-                  <button class="button-filter" (click)="enviar(em)">Eliminatorias</button>
-                  <ng-template #em let-c="close" let-d="dismiss">
-                    <div class="modal-header">Eliminatorias Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body elimination">
-                      <img src="assets/images/news/eliminacion_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f1m)">Fecha 1</button>
-                  <ng-template #f1m let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 1 Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha1_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f2m)">Fecha 2</button>
-                  <ng-template #f2m let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 2 Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha2_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f3m)">Fecha 3</button>
-                  <ng-template #f3m let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 3 Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha3_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f4m)">Fecha 4</button>
-                  <ng-template #f4m let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 4 Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha4_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f5m)">Fecha 5</button>
-                  <ng-template #f5m let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 5 Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha5_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f6m)">Fecha 6</button>
-                  <ng-template #f6m let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 6 Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha6_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(fem)">Fase Eliminatoria</button>
-                  <ng-template #fem let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fase Eliminatoria Manizales
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fixture_manizales.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter">Goleadores</button>
-                  <div class="service-icon">
-                    <i (click)="resultsManizales=!resultsManizales" class="icon ion-md-arrow-dropup-circle"></i>
-                  </div>
-              </div>
-            </h3> 
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mr-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
-            <div class="card-head">
-              <img class="card-img-top" src="assets/images/news/pereira.png" alt="Card image cap">
-              <div class="city-info">
-                <h1>Pereira</h1>
-              </div>
-            </div>
-          <div class="card-body">
-            <h3>
-              Resultados
-              <div class="service-icon">
-                <i *ngIf="!resultsPereira" (click)="resultsPereira=!resultsPereira" class="icon ion-md-arrow-dropdown-circle"></i>
-              </div>
-              <div *ngIf="resultsPereira">
-                  <button class="button-filter" (click)="enviar(ep)">Eliminatorias</button>
-                  <ng-template #ep let-c="close" let-d="dismiss">
-                    <div class="modal-header">Eliminatorias Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body elimination">
-                      <img src="assets/images/news/eliminacion_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f1p)">Fecha 1</button>
-                  <ng-template #f1p let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 1 Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha1_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f2p)">Fecha 2</button>
-                  <ng-template #f2p let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 2 Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha2_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f3p)">Fecha 3</button>
-                  <ng-template #f3p let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 3 Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha3_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f4p)">Fecha 4</button>
-                  <ng-template #f4p let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 4 Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha4_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f5p)">Fecha 5</button>
-                  <ng-template #f5p let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 5 Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha5_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(f6p)">Fecha 6</button>
-                  <ng-template #f6p let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fecha 6 Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fecha6_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter" (click)="enviar(fep)">Fase Eliminatoria</button>
-                  <ng-template #fep let-c="close" let-d="dismiss">
-                    <div class="modal-header">Fase Eliminatoria Pereira
-                      <button type="button" class="close" (click)="c('')">X</button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="assets/images/news/fixture_pereira.png" alt="Card image cap">
-                    </div>
-                  </ng-template>
-                  <button class="button-filter">Goleadores</button>
-                  <div class="service-icon">
-                    <i (click)="resultsPereira=!resultsPereira" class="icon ion-md-arrow-dropup-circle"></i>
-                  </div>
-              </div>
-            </h3> 
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-  <div class="container">
-    <div class="news-box">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 torneo-banner">
-          <img class="card-img-top" src="assets/images/news/torneo_wplay.png" alt="Torneo wplay">
-          <a class="tyc" href="assets/images/news/torneo_wplay.docx" download>
-            <i class="icon ion-md-document"></i>
-            Términos y Condiciones
-          </a>
-          <a class="subscribe" href="https://docs.google.com/forms/d/e/1FAIpQLSc9umsWXBNaUTZ_LHKdZsTK2MqQsd2EI3s3_Rl8-p_A0ocmBQ/viewform?vc=0&c=0&w=1" target="_blank">
-            Inscríbete
-          </a>
-        </div>
-        <div class="col-lg-6 col-md-12">
-              <h3>1er TORNEO WPLAY.CO MANIZALES</h3>
-              <br/>
-              <p>
-              Fechas: Sábados o domigos desde el 18 de enero al 29 de marzo 2020.<br/>
-              Lugar: Canchas de Marchagas.<br/>
-              Valor de la inscripción: 900.000 en efectivo y 300.000 en recargas Wplay.co. <br/>
-                Incluye: <br/>
-              *	Canchas y arbitraje para el desarrollo de todos los partidos en las fechas estipuladas.<br/>
-              *	Hidratación para los jugadores durante los partidos en todas las fechas.<br/>
-              *	Trofeos y medallas para el 1er, 2do, <br/>
-              *	Trofeos Goleador y Valla menos vencida<br/>
-              *	Póliza de primeros auxilios para los jugadores que durante el torneo programado por WPLAY lo requieran<br/>
-              *	Uniforme patrocinado por Wplay.co<br/><br/>
-              
-              Para ingresar por uno de los 40 cupos para participar en la 1er Torneo Wplay.co en la ciudad de Manizales, cada uno de los jugadores inscritos por equipo (12 jugadores) deberá Registrarse en la plataforma de apuestas deportivas, realizar una recarga y apuesta por valor mínimo de $25.000 pesos en el punto de experiencia Wplay.co ubicado en el C.C parque caldas e imprimir los tickets de recarga y apuesta (300.000 por equipo)
-              Así mismo cada jugador deberá realizar un pago único de $75.000 pesos por derechos de inscripción a CONEXIÓN EVENTOS Y SERVICIOS S.A.S. (900.000 por equipo)<br/><br/>
-              
-              Metodología:<br/>
-              El torneo empieza el sábado 18 de enero con la primera fecha de fase de grupos. Son 5 grupos de 8 equipos cada uno, clasifican los primeros 3 de cada grupo y el mejor cuarto. Después se juega octavos de final, cuartos de final, semifinal y por último final y el tercer puesto. <br/>
-              Documentación requerida:<br/>
-              Podrán participar como jugadores (mayores de edad) los cuales deberán presentar copia del certificado de afiliación a la EPS o SISBEN, copia de la Cedula de Ciudadanía, y copia de los tikets de Recarga y Apuesta en Wplay.co por valor de $25.000 cada uno por jugador<br/>
-              Numero de contacto:<br/>
-              3104217912 -  3216527426</p>
-        </div>
-     </div>
-    </div>
-  </div>
 </section>
