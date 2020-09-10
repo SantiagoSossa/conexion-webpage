@@ -19,7 +19,6 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { NewsComponent } from './news/news.component';
-import { FloatBannerComponent } from './float-banner/float-banner.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +31,7 @@ import { FloatBannerComponent } from './float-banner/float-banner.component';
     ClientsComponent,
     ContactUsComponent,
     FooterComponent,
-    NewsComponent,
-    FloatBannerComponent
+    NewsComponent
   ],
   imports: [
     BrowserModule,
